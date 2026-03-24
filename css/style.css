@@ -1,0 +1,73 @@
+* {}
+
+
+
+
+@font-face {
+    font-family: 'KerisKedyuche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-3@1.0/KERISKEDU_B.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NostalgicPoliceFairness';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/Griun_PolFairness-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+h1 {
+    font-family: 'KerisKedyuche', sans-serif;
+
+    margin: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+
+
+
+.box img {
+    max-width: 100%;
+
+    border-radius: 10px;
+
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+p {
+    margin-bottom: 92px;
+    margin-top: 38px;
+}
+
+h2,
+p {
+    font-family: 'NostalgicPoliceFairness', serif;
+}
+
+body {
+    background-image: url(KakaoTalk_20260324_145129080.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+}
