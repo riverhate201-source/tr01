@@ -1,73 +1,117 @@
-* {}
+body {
+    font-family: var(--font-main);
+}
 
 
 
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
-@font-face {
-    font-family: 'KerisKedyuche';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-3@1.0/KERISKEDU_B.woff2') format('woff2');
+.default {
+    padding: 120px 0;
+}
+
+.title {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title h2 {
+    font-size: 32px;
     font-weight: 700;
-    font-display: swap;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
 }
 
 
-@font-face {
-    font-family: 'NostalgicPoliceFairness';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/Griun_PolFairness-Rg.woff2') format('woff2');
-    font-weight: normal;
-    font-display: swap;
+.header {
+    background: #807f7f;
 }
 
-
-h1 {
-    font-family: 'KerisKedyuche', sans-serif;
-
-    margin: 20px;
-    line-height: 1.6;
-    margin-bottom: 48px;
+.header .inner {
+    display: flex;
+    align-items: center;
+    height: 96px;
 }
 
+.header .gnb {
+    margin-left: auto;
+}
 
-h1,
-h2,
-p {
+.header .gnb>ul {
+    display: flex;
+    gap: 48px;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+    line-height: 96px;
+}
+
+.main_visual {
+    position: relative;
+    height: calc(100vh - 96px);
+    background: url(../images/_index_bg01.jpg);
+}
+
+.main_visual .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_visual .slg h2 {
+    font-size: 72px;
+    font-weight: 900;
+    color: #fff;
     text-align: center;
 }
 
-
-
-
-.box img {
-    max-width: 100%;
-
-    border-radius: 10px;
-
+.main_visual .slg p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 24px;
 }
 
-h2 {
-    margin-top: 40px;
-    margin-bottom: 32px;
+.main_info .inner {
+    display: flex;
+    gap: 24px;
+    margin-top: 64px;
 }
 
-p {
-    margin-bottom: 92px;
-    margin-top: 38px;
+.main_info .inner .itm {
+    flex: 1;
 }
 
-h2,
-p {
-    font-family: 'NostalgicPoliceFairness', serif;
+.main_info .inner .itm .txt_box {
+    margin-top: 24px;
 }
 
-body {
-    background-image: url(KakaoTalk_20260324_145129080.jpg);
+.main_info .inner .itm .txt_box strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
 
-    background-size: cover;
+.main_info .inner .itm .txt_box p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
 
-    background-repeat: no-repeat;
-
-    background-position: center;
-
-    background-attachment: fixed;
-
+.footer {
+    padding: 80px 0;
+    background: #f7f7f7;
 }
